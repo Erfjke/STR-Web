@@ -1,0 +1,73 @@
+
+body {
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+   
+}
+
+h1{
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: 'FightClubFont';
+    src: url('fonts/FightClubFont.ttf') ; 
+}
+@font-face {
+    font-family: 'ShutterIslandFont';
+    src: url('fonts/ShutterIslandFont.ttf'); 
+}
+@font-face {
+    font-family: 'InceptionFont';
+    src: url('fonts/InceptionFont.ttf') ; 
+}
+/* Применяем шрифт и выравнивание для описания фильма "Бойцовский клуб" */
+.fight-club-description {
+    font-family: 'FightClubFont';
+    text-align: center; /* Центрируем текст описания фильма */
+    
+}
+
+/* Применяем шрифт и выравнивание для описания фильма "Остров проклятых" */
+.shutter-island-description {
+    font-family: 'ShutterIslandFont';
+    text-align: justify; /* Выравнивание по ширине */
+}
+
+/* Применяем шрифт и выравнивание для описания фильма "Начало" */
+.inception-description {
+    font-family: 'InceptionFont';
+    text-align: right; /* Обычное выравнивание по левому краю */
+}
+
+/* 4. Якорные ссылки */
+ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0;
+}
+ul li a {
+    color: black;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+ul li a:hover {
+    text-decoration: underline; /* При наведении добавляем подчеркивание */
+}
+
+
+img {
+    width: 300px; /* Устанавливаем одинаковый размер для всех изображений */
+    height: auto;
+    border-radius: 15px; /* Радиус закругления */
+}
+
