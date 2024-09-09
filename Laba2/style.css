@@ -32,22 +32,30 @@ h1{
     font-family: 'InceptionFont';
     src: url('fonts/InceptionFont.ttf') ; 
 }
-/* Применяем шрифт и выравнивание для описания фильма "Бойцовский клуб" */
+.fight_club{
+    font-family: 'FightClubFont';
+}
+.shutter_island{
+    font-family: 'ShutterIslandFont';
+}
+.inception{
+    font-family: 'InceptionFont';
+}
+
+
 .fight-club-description {
     font-family: 'FightClubFont';
     text-align: center; /* Центрируем текст описания фильма */
     
 }
 
-/* Применяем шрифт и выравнивание для описания фильма "Остров проклятых" */
+
 .shutter-island-description {
-    font-family: 'ShutterIslandFont';
+    
     text-align: justify; /* Выравнивание по ширине */
 }
 
-/* Применяем шрифт и выравнивание для описания фильма "Начало" */
 .inception-description {
-    font-family: 'InceptionFont';
     text-align: right; /* Обычное выравнивание по левому краю */
 }
 
