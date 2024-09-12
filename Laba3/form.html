@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета регистрации</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Анкета регистрации на семинар</h1>
+    <form action="/submit" method="post">
+
+        <fieldset>
+            <legend>Личная информация</legend>
+
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Дополнительная информация</legend>
+
+            <label>Выберите вашу профессию:</label><br>
+            <input type="radio" id="developer" name="profession" value="developer">
+            <label for="developer">Разработчик</label><br>
+            <input type="radio" id="designer" name="profession" value="designer">
+            <label for="designer">Дизайнер</label><br>
+            <input type="radio" id="manager" name="profession" value="manager">
+            <label for="manager">Менеджер</label><br><br>
+
+            <label for="skills">Загрузите ваше резюме (файл .pdf):</label>
+            <input type="file" id="skills" name="skills" accept=".pdf"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Дополнительные опции</legend>
+
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Подписаться на рассылку новостей</label><br><br>
+
+            <input type="reset" value="Сбросить">
+            <input type="submit" value="Отправить">
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
