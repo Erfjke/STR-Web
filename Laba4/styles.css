@@ -1,0 +1,148 @@
+/* Общие стили */
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: rgb(52, 206, 142);
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+button {
+    margin: 50px;
+    font-size: 20px;
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    animation: vibrate 0.1s infinite; /* Анимация вибрации */
+}
+
+/* Вибрация кнопки */
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Изменение кнопки при наведении */
+button:hover {
+    animation: none; /* Останавливаем вибрацию */
+    background-color: green; /* Меняем цвет */
+}
+
+/* Стили для ссылки */
+a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Подчеркивание ссылки при наведении */
+a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: green;
+    bottom: 0;
+    left: 50%;
+    transition: all 0.3s ease;
+}
+
+a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+a:hover {
+    color: green;
+}
+
+.ball {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65px;
+    height: 65px;
+    background-color: #53d040;
+    border-radius: 50%;
+    animation: fall 3s ease-in-out forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    15% {
+        width: 65px;
+        height: 65px;
+    }
+    25%{
+        width: 70px;
+        height: 60px;
+    }
+    30%{
+        transform: translateY(400px);
+        width: 75px;
+        height: 55px;
+    }
+    45% {
+        transform: translateY(200px);
+        width: 65px;
+        height: 65px;
+    }
+    55%{
+        width: 68px;
+        height: 62px;
+    }
+    60%{
+        transform: translateY(400px);
+        width: 73px;
+        height: 58px;
+    }
+    75% {
+        transform: translateY(300px);
+        width: 65px;
+        height: 65px;
+    }
+    85%{
+        width: 70px;
+        height: 57px;
+    }
+    90%{
+        transform: translateY(400px);
+        width: 69px;
+        height: 61px;
+    }
+    95%{
+        width: 66px;
+        height: 64px;
+    }
+    100%{
+        transform: translateY(400px);
+    }
+}
