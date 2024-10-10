@@ -11,5 +11,5 @@ body {
     background-color: #fff; /* Фон контейнера */
     border: 1px solid #ccc; /* Рамка контейнера */
     padding: 20px; /* Внутренние отступы */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+
 }
